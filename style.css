@@ -7,13 +7,13 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: #f4f7fb;
+    background: #e5d7ab;
     color: #263238;
     line-height: 1.6;
 }
 
 header {
-    background: #176b55;
+    background: #ccbd69;
     color: white;
     text-align: center;
     padding: 30px 15px;
@@ -30,7 +30,7 @@ header h1 {
 }
 
 section {
-    background: white;
+    background: #fcf0cb;
     padding: 25px;
     margin-bottom: 25px;
     border-radius: 12px;
@@ -39,7 +39,7 @@ section {
 
 h2 {
     margin-bottom: 18px;
-    color: #176b55;
+    color: #6b5717;
 }
 
 form {
@@ -50,7 +50,7 @@ form {
 
 input, select, button {
     padding: 12px;
-    border: 1px solid #d5dce5;
+    border: 1px solid #946a22;
     border-radius: 6px;
     font-size: 15px;
 }
@@ -61,8 +61,8 @@ input, select {
 }
 
 button {
-    background: #176b55;
-    color: white;
+    background: #93882a;
+    color: beige;
     border: none;
     cursor: pointer;
     transition: background 0.2s;
@@ -82,7 +82,7 @@ button:hover {
 }
 
 .card {
-    background: white;
+    background: rgb(249, 245, 238);
     padding: 22px;
     border-radius: 10px;
     border-left: 5px solid #176b55;
@@ -102,15 +102,15 @@ button:hover {
 }
 
 .income {
-    border-color: #16a34a;
+    border-color: green;
 }
 
 .expense {
-    border-color: #dc3545;
+    border-color: red;
 }
 
 .balance {
-    border-color: #2563eb;
+    border-color: blue;
 }
 
 .table-wrapper {
@@ -136,12 +136,12 @@ th {
 }
 
 .income-text {
-    color: #16a34a;
+    color: green;
     font-weight: bold;
 }
 
 .expense-text {
-    color: #dc3545;
+    color: red;
     font-weight: bold;
 }
 
@@ -162,7 +162,7 @@ th {
 
 footer {
     text-align: center;
-    background: #176b55;
+    background: #ccbd69;
     color: white;
     padding: 18px;
     margin-top: 40px;
