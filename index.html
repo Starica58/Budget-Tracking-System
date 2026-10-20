@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Budget Tracker</h1>
+        <p>Manage your money wisely.</p>
+    </header>
+
+    <main class="container">
+
+        <section class="budget-box">
+            <h2>Set Your Budget</h2>
+            <form id="budgetForm">
+                <input
+                    type="number"
+                    id="budgetInput"
+                    placeholder="Enter your total budget"
+                    min="0.01"
+                    step="0.01"
+                    required
+                >
+                <button type="submit">Set Budget</button>
+            </form>
+        </section>
+
+        <section class="summary">
+            <div class="card">
+                <h3>Total Budget</h3>
+                <p id="totalBudget">₱0.00</p>
+            </div>
+
+            <div class="card income">
+                <h3>Total Income</h3>
+                <p id="totalIncome">₱0.00</p>
+            </div>
+
+            <div class="card expense">
+                <h3>Total Expenses</h3>
+                <p id="totalExpenses">₱0.00</p>
+            </div>
+
+            <div class="card balance">
+                <h3>Remaining Balance</h3>
+                <p id="remainingBalance">₱0.00</p>
+            </div>
+        </section>
+
+        <section class="transaction-box">
+            <h2>Add Transaction</h2>
+
+            <form id="transactionForm">
+                <input
+                    type="text"
+                    id="description"
+                    placeholder="Description"
+                    maxlength="100"
+                    required
+                >
+
+                <input
+                    type="number"
+                    id="amount"
+                    placeholder="Amount (₱)"
+                    min="0.01"
+                    step="0.01"
+                    required
+                >
+
+                <select id="type" required>
+                    <option value="income">Income</option>
+                    <option value="expense">Expense</option>
+                </select>
+
+                <button type="submit">Add Transaction</button>
+            </form>
+        </section>
+
+        <section class="history">
+            <h2>Transaction History</h2>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Description</th>
+                            <th>Type</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="transactionList"></tbody>
+                </table>
+            </div>
+
+            <p id="emptyMessage">No transactions yet. Add one above!</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p> Wise &copy; 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
